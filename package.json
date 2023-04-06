@@ -19,6 +19,7 @@
   "homepage": "https://github.com/ParthBakhda/Logo-Generator#readme",
   "dependencies": {
     "inquirer": "^9.1.5",
-    "svg-captcha": "^1.4.0"
+    "svg-captcha": "^1.4.0",
+    "vue": "^2.1.7"
   }
 }
