@@ -1,0 +1,24 @@
+{
+  "name": "logo-generator",
+  "version": "1.0.0",
+  "description": "Generates logo based on node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "npm index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ParthBakhda/Logo-Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ParthBakhda/Logo-Generator/issues"
+  },
+  "homepage": "https://github.com/ParthBakhda/Logo-Generator#readme",
+  "dependencies": {
+    "inquirer": "^9.1.5",
+    "svg-captcha": "^1.4.0"
+  }
+}
