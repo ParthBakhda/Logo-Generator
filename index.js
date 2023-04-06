@@ -23,15 +23,32 @@ inquirer
       type: 'input',
       name: 'textColor',
       message:
-        'Enter a color keyword (e.g. "red") or a hexadecimal color code (e.g. "#FF0000") for the text:',
+        'Enter a color keyword (e.g. "red") or a color code (e.g. "#FF0000") for the text:',
       validate: function (value) {
         var regex = /^#?[0-9A-Fa-f]{6}$/;
         if (!value.match(/^[a-zA-Z]+$/) && !regex.test(value)) {
-          return 'Please enter a valid color keyword or a hexadecimal color code.';
+          return 'Please enter a valid color keyword or a color code.';
         } else {
           return true;
         }
       },
     },
     {
-    
+      type: 'list',
+      name: 'shape',
+      message: 'Choose a shape for the logo:',
+      choices: ['circle', 'triangle', 'square'],
+    },
+    {
+      type: 'input',
+      name: 'shapeColor',
+      message:
+        'Enter a color keyword (e.g. "red") or a color code (e.g. "#FF0000") for the shape:',
+      validate: function (value) {
+        var regex = /^#?[0-9A-Fa-f]{6}$/;
+        if (!value.match(/^[a-zA-Z]+$/) && !regex.test(value)) {
+          return 'Please enter a valid color keyword or a color code.';
+        } else {
+          return true;
+        }
+
